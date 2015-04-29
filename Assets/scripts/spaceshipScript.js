@@ -5,7 +5,7 @@ function Start () {
 }
 
 function Update () {
-rigidbody2D.velocity.x = Input.GetAxis("Horizontal") * 10;
+GetComponent.<Rigidbody2D>().velocity.x = Input.GetAxis("Horizontal") * 10;
 
 if (Input.GetKeyDown("space")) {
        

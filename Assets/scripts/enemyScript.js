@@ -1,8 +1,8 @@
 ﻿#pragma strict
 public var speed : int = -5;
 function Start () {
-rigidbody2D.velocity.y = speed;
-rigidbody2D.angularVelocity = Random.Range(-200, 200);
+GetComponent.<Rigidbody2D>().velocity.y = speed;
+GetComponent.<Rigidbody2D>().angularVelocity = Random.Range(-200, 200);
 Destroy(gameObject, 3);
 }
 
@@ -24,7 +24,7 @@ function OnTriggerEnter2D(obj : Collider2D) {
     }
     // If it collided with the spaceship
     if (name == "spaceship") {
-    GameObject.Find("choca").GetComponent.<AudioSource>().Play();
+   GameObject.Find("choca").GetComponent.<AudioSource>().Play();
         // Destroy itself (the enemy) to keep things simple
         Destroy(gameObject);
     }
