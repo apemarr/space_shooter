@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\GameControll.js" />
      <Compile Include="Assets\scripts\bulletsccript.js" />
      <Compile Include="Assets\scripts\enemyscript.js" />
      <Compile Include="Assets\scripts\menuStartGame.js" />

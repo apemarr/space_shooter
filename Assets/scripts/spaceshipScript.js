@@ -12,3 +12,4 @@ if (Input.GetKeyDown("space")) {
         Instantiate(bullet, transform.position, Quaternion.identity);
     }
 }
+
