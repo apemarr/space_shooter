@@ -1,6 +1,6 @@
 ﻿#pragma strict
 public var bullet : GameObject;
-public var lifes : int=3;
+public var Lifes : int=3;
 function Start () {
 
 }
@@ -16,8 +16,8 @@ if (Input.GetKeyDown("space")) {
 
 
 function OnTriggerEnter2D(obj : Collider2D) {
- lifes=lifes-1;
- if(lifes<=0){
+ Lifes=Lifes-1;
+ if(Lifes<=0){
  GameObject.Find("loose").GetComponent.<AudioSource>().Play();
  Application.LoadLevel("menu");
  }
