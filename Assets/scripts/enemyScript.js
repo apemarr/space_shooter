@@ -11,7 +11,7 @@ function Update () {
 }
 function OnTriggerEnter2D(obj : Collider2D) {  
     var name = obj.gameObject.name;
-
+	
     // If it collided with a bullet
     if (name == "bullet(Clone)") {
     GameObject.Find("explota").GetComponent.<AudioSource>().Play();
@@ -24,6 +24,7 @@ function OnTriggerEnter2D(obj : Collider2D) {
     }
     // If it collided with the spaceship
     if (name == "spaceship") {
+    
    GameObject.Find("choca").GetComponent.<AudioSource>().Play();
         // Destroy itself (the enemy) to keep things simple
         Destroy(gameObject);
