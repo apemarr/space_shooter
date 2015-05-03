@@ -20,11 +20,11 @@ function OnTriggerEnter2D(obj : Collider2D) {
 		
         // And destroy the bullet
         Destroy(obj.gameObject);
-         
+
+        
     }
     // If it collided with the spaceship
     if (name == "spaceship") {
-    
    GameObject.Find("choca").GetComponent.<AudioSource>().Play();
         // Destroy itself (the enemy) to keep things simple
         Destroy(gameObject);

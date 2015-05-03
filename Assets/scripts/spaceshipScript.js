@@ -14,9 +14,11 @@ if (Input.GetKeyDown("space")) {
     }
 }
 
-
 function OnTriggerEnter2D(obj : Collider2D) {
+if (obj.tag=="enemy")
+{
  Lifes=Lifes-1;
+}
  if(Lifes<=0){
  GameObject.Find("loose").GetComponent.<AudioSource>().Play();
  Application.LoadLevel("menu");
